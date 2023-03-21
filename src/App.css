@@ -1,0 +1,306 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+.main_div {
+  width: 100%;
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+}
+
+.sub_div {
+  border: none;
+  border-radius: 10px;
+  width: 60%;
+  padding: 1%;
+  box-shadow: 4px 4px 10px 3px #cfcfcf;
+}
+
+.header {
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 10px;
+  margin-bottom: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.header > h6 {
+  margin-bottom: 10px;
+}
+
+.rating {
+  margin-top: 5px;
+}
+
+.header > h3 {
+  margin-bottom: 10px;
+}
+
+.Questions_div {
+  margin-left: 15px;
+  height: 10vh;
+}
+
+.options_main {
+  display: flex;
+  justify-content: center;
+}
+
+.Options {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  justify-content: space-between;
+}
+
+.option_btn {
+  width: 40%;
+  margin: 20px;
+  padding: 10px;
+  background-color: transparent;
+  border-radius: 10px;
+  border: 1px solid rgb(212, 212, 212);
+  cursor: pointer;
+}
+
+.option_btn:active {
+  background-color: rgb(232, 231, 231);
+}
+
+.Next_btn {
+  width: 50%;
+  margin: 0 auto;
+  margin: 20px;
+  padding: 10px;
+  background-color: rgb(48, 47, 47);
+  border-radius: 10px;
+  color: white;
+  border: 1px solidr rgb(48, 47, 47);
+  cursor: pointer;
+}
+
+.next_btn_div {
+  display: flex;
+  justify-content: center;
+}
+
+.Next_btn:active {
+  background-color: rgb(68, 67, 67);
+  border: 1px solidr rgb(68, 67, 67);
+}
+
+.Option_Result_div {
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+  margin-top: 3%;
+}
+
+.score_board {
+  display: flex;
+  justify-content: space-between;
+}
+
+.option_btn_false {
+  background-color: red;
+  color: white;
+}
+
+.option_btn_true {
+  background-color: green;
+  color: white;
+}
+
+.pgbar {
+  height: 5px;
+  background: rgb(224, 224, 222);
+  border-radius: 0px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.swal-button {
+  background-color: rgb(68, 67, 67);
+}
+
+.swal-button:hover {
+  background-color: rgb(68, 67, 67) !important;
+  /* border: 1px solidr rgb(68, 67, 67); */
+}
+
+/* Screen */
+
+.mainBox {
+  width: 100%;
+  margin-top: 5%;
+  justify-content: center;
+  display: flex;
+}
+
+.sub_div_main {
+  border: none;
+  border-radius: 10px;
+  width: 60%;
+  padding: 1%;
+  /* height: 50vh; */
+  box-shadow: 4px 4px 10px 3px #cfcfcf;
+}
+
+.instructionHeading {
+  padding: 2%;
+}
+
+.instructions {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.instructions > li {
+  margin-top: 20px;
+}
+
+.instructionsBtnBox {
+  margin: 2%;
+  margin-top: 30px;
+}
+
+.instructionsBtnBox > button {
+  width: 100%;
+}
+
+.ant-btn {
+  background-color: rgb(68, 67, 67) !important;
+}
+
+/* Result */
+
+.msg {
+  padding: 2%;
+  margin-top: 2%;
+  margin-bottom: 1%;
+}
+
+.sub_div_result {
+  border: none;
+  border-radius: 10px;
+  width: 30%;
+  padding: 1%;
+  text-align: center;
+  box-shadow: 4px 4px 10px 3px #cfcfcf;
+}
+
+.result_heading > h2 {
+  color: rgb(47, 154, 255);
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.result_heading {
+  margin-bottom: 2%;
+}
+
+.quit_btn_div {
+  margin-top: 8%;
+}
+
+.quit_btn {
+  background-color: rgb(219, 2, 2) !important;
+  border: none;
+  width: 100%;
+  font-weight: 670;
+  color: white;
+}
+
+.quit_btn:hover {
+  background-color: rgb(185, 1, 1) !important;
+  border: none;
+  color: white !important;
+}
+
+@media screen and (max-width: 742px) {
+  .sub_div {
+    height: auto;
+  }
+
+  .Options {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 666px) {
+  .option_btn {
+    width: 90%;
+    margin: 20px;
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 1px solid rgb(212, 212, 212);
+    cursor: pointer;
+  }
+  .option_btn_false {
+    background-color: red;
+    color: white;
+  }
+
+  .option_btn_true {
+    background-color: green;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .sub_div {
+    width: 100%;
+  }
+
+  .sub_div_main {
+    width: 100%;
+  }
+
+  .instructionHeading {
+    padding: 2%;
+  }
+
+  .instructions {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .instructions > li {
+    margin-top: 10px;
+    font-size: 0.9rem;
+  }
+
+  .instructionsBtnBox {
+    margin: 2%;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 535px) {
+  .sub_div_result {
+    width: 60%;
+  }
+
+  .result_heading {
+    margin-bottom: 2%;
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 268px) {
+  .sub_div_result {
+    width: 95%;
+  }
+  .result_heading {
+    margin-bottom: 2%;
+    font-size: 0.5rem;
+  }
+}
